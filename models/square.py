@@ -6,7 +6,7 @@ from .rectangle import Rectangle
 
 class Square(Rectangle):
     """ Inherits from class rectangle """
-    def __init__(self, size, x=0, y=0,id=None):
+    def __init__(self, size, x=0, y=0, id=None):
         """ Initializes an instance of class Square """
         super().__init__(size, size, x, y, id)
 
@@ -14,7 +14,7 @@ class Square(Rectangle):
         """ Returns a string representation of the instance """
         a = self.id
         b = self.width
-        c = self.x 
+        c = self.x
         d = self.y
         return "[Square] ({}) {}/{} - {}".format(a, c, d, b)
 
@@ -51,12 +51,12 @@ class Square(Rectangle):
                         self.y = value
                     if key == "x":
                         self.x = value
+
     def to_dictionary(self):
         """ Returns the dictionary representation of a sqaure """
         my_dict = {
                 "id": self.id,
                 "size": self.size,
                 "x": self.x,
-                "y": self.y
-                }
+                "y": self.y}
         return my_dict

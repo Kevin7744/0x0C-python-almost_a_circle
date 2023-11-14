@@ -5,9 +5,10 @@ Class rectangle that inherits from Base.
 
 from .base import Base
 
+
 class Rectangle(Base):
     """
-    Args: 
+    Args:
         private attribute:(each with its own getter and setter)
             __width: width
             __height: height
@@ -35,7 +36,7 @@ class Rectangle(Base):
         if value <= 0:
             raise ValueError("width must be > 0")
         self.__width = value
-    
+
     @property
     def height(self):
         """ Retrieves the private instance of atrtibute height """
@@ -92,7 +93,7 @@ class Rectangle(Base):
                 print('#', end='')
                 if j == self.width - 1:
                     print()
-    
+
     def __str__(self):
         """ Returns a representation of rectangle instance """
         a = self.id
